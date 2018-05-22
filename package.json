@@ -1,0 +1,30 @@
+{
+  "name": "practice-algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register **/*.spec.ts",
+    "debug-test": "mocha --inspect-brk -r ts-node/register **/*.spec.ts",
+    "tsc": "tsc -w -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreGeng/practice-algorithm.git"
+  },
+  "keywords": [],
+  "author": "Andre Geng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreGeng/practice-algorithm/issues"
+  },
+  "homepage": "https://github.com/AndreGeng/practice-algorithm#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  }
+}
