@@ -22,8 +22,11 @@
   "devDependencies": {
     "@types/chai": "^4.0.2",
     "@types/mocha": "^2.2.41",
+    "@types/node": "^10.1.2",
+    "@types/sinon": "^4.3.3",
     "chai": "^4.1.1",
     "mocha": "^3.5.0",
+    "sinon": "^5.0.10",
     "ts-node": "^3.3.0",
     "typescript": "^2.4.2"
   }
