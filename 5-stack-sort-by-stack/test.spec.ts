@@ -19,7 +19,7 @@ describe('sort stack by stack', () => {
     let preEle = stack.pop();
     while(!stack.isEmpty()) {
       const ele = stack.pop();
-      expect(preEle).gt(ele);
+      expect(preEle).at.least(ele);
       preEle = ele;
     }
   });
