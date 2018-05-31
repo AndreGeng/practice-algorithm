@@ -5,6 +5,9 @@ import { resolve } from 'path';
 import { spy } from 'sinon';
 
 describe('breadth first folder traverse', () => {
+  after(() => {
+    (console.log as any).restore();
+  });
   it('should traverse test-folder correctly', async () => {
     const logSpy = spy(console, 'log');
     await readDir(resolve(__dirname, 'test-folder'));
