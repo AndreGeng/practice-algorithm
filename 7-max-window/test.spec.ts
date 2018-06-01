@@ -1,4 +1,4 @@
-import getMaxWindowArr from './index';
+import getMaxWindowArr, { getMaxWindowArrSilly } from './index';
 import { expect } from 'chai';
 import 'mocha';
 
@@ -7,8 +7,11 @@ describe('getMaxWindowArr', () => {
   let w: number = 3;
   it('should return value as expected', () => {
     const result = getMaxWindowArr(arr, w);
+    const resultOld = getMaxWindowArrSilly(arr, w);
     const expectRes = [5,5,5,4,6,7];
     expect(result.length).to.equal(expectRes.length);
     expect(result.join(',')).to.equal(expectRes.join(','));
+    expect(resultOld.length).to.equal(expectRes.length);
+    expect(resultOld.join(',')).to.equal(expectRes.join(','));
   });
 });
