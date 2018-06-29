@@ -27,7 +27,7 @@ describe('leetcode two sum', () => {
     numTwoIndex = getRandomIndex(numOneIndex);
     target = nums[numOneIndex] + nums[numTwoIndex];
   });
-  it.only('twosum should work as expected', function() {
+  it('twosum should work as expected', function() {
     const [num1Index, num2Index] = twoSum(nums, target);
     expect(num1Index).not.equal(num2Index);
     [numOneIndex, numTwoIndex] = [numOneIndex, numTwoIndex].sort();
