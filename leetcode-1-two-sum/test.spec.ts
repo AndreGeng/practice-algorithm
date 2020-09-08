@@ -1,8 +1,8 @@
-import twoSum from './index';
+import { twoSum, twoSumWithHashTable } from './index';
 import { expect } from 'chai';
 import 'mocha';
 
-describe('leetcode two sum', () => {
+describe.only('leetcode two sum', () => {
   const nums: number[] = [];
   let target: number;
   let numOneIndex: number;
@@ -30,8 +30,11 @@ describe('leetcode two sum', () => {
   it('twosum should work as expected', function() {
     const [num1Index, num2Index] = twoSum(nums, target);
     expect(num1Index).not.equal(num2Index);
-    [numOneIndex, numTwoIndex] = [numOneIndex, numTwoIndex].sort();
-    expect(num1Index).to.equal(numOneIndex);
-    expect(num2Index).to.equal(numTwoIndex);
+    expect(nums[num1Index] + nums[num2Index]).to.equal(target);
+  });
+  it('twoSumWithHashTable should work as expected', function() {
+    const [num1Index, num2Index] = twoSumWithHashTable(nums, target);
+    expect(num1Index).not.equal(num2Index);
+    expect(nums[num1Index] + nums[num2Index]).to.equal(target);
   });
 });
