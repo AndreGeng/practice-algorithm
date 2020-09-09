@@ -2,10 +2,6 @@ import addTwoNum from './index';
 import { expect } from 'chai';
 import 'mocha';
 
-interface ListNode {
-  val: number;
-  next: ListNode;
-}
 describe('leetcode add two sum', () => {
   let l1: ListNode;
   let l2: ListNode;

@@ -2,7 +2,7 @@ import { twoSum, twoSumWithHashTable } from './index';
 import { expect } from 'chai';
 import 'mocha';
 
-describe.only('leetcode two sum', () => {
+describe('leetcode two sum', () => {
   const nums: number[] = [];
   let target: number;
   let numOneIndex: number;
