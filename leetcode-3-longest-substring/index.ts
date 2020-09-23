@@ -5,7 +5,7 @@
  * @param {string} s
  * @return {number}
  */
-export const lengthOfLongestSubstring = function(s: string) {
+export const lengthOfLongestSubstring = function(s: string): number {
   let result = 0
   if (!s) {
     return result
