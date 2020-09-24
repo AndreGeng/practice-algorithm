@@ -2,7 +2,7 @@ import { reverseTree } from "./index";
 import { expect } from "chai";
 import "mocha";
 
-describe.only("reverseTree", () => {
+describe("reverseTree", () => {
   it("shoule work as expected", () => {
     expect(
       reverseTree({
