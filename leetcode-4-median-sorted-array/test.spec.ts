@@ -2,7 +2,7 @@ import { findMedianSortedArrays } from "./index"
 import { expect } from "chai"
 import "mocha"
 
-describe.only("leetcode find longest string", () => {
+describe("leetcode sorted array median", () => {
   it("shoule work as expected", () => {
     expect(findMedianSortedArrays([1,3], [2])).to.equal(2)
     expect(findMedianSortedArrays([1,2], [3,4])).to.equal(2.5)
