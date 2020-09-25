@@ -15,7 +15,9 @@ describe('breadth first folder traverse', () => {
       '1.txt',
       '2.txt',
       '1.1.txt',
-      '1.1.1.txt',
+      '2.1.txt',
+      '3.1.txt',
+      '2.1.1.txt',
     ].forEach((txt, index) => {
       expect(logSpy.getCall(index).args[0]).to.equal(txt);
     });
