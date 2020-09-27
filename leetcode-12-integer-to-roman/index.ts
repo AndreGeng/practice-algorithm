@@ -52,7 +52,7 @@ export function intToRoman(num: number): string {
   return result
 };
 
-console.log(intToRoman(3))
-console.log(intToRoman(4))
-console.log(intToRoman(9))
-console.log(intToRoman(58))
+// console.log(intToRoman(3))
+// console.log(intToRoman(4))
+// console.log(intToRoman(9))
+// console.log(intToRoman(58))
