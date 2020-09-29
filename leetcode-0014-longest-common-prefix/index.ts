@@ -36,7 +36,7 @@ function longestCommonPrefix1(strs: string[]): string {
   }
   return result
 }
-function longestCommonPrefix(strs: string[]): string {
+export function longestCommonPrefix(strs: string[]): string {
   function isCommonPrefix(strs1: string[], str: string) {
     if (strs1.length <= 0) {
       return str.length === 0
@@ -83,4 +83,4 @@ function longestCommonPrefix(strs: string[]): string {
 // console.log(longestCommonPrefix([]))
 // console.log(longestCommonPrefix(["aa","aa"]))
 // console.log(longestCommonPrefix(["aa","a"]))
-console.log(longestCommonPrefix(["aa","bb"]))
+// console.log(longestCommonPrefix(["aa","bb"]))
